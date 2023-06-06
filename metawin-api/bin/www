@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+const cookieSession = require("cookie-session");
+const keys = require("../config/key");
+const port = 5012;
+const path = require('path');
+const cors = require("cors");
+const cookieParser = require("cookie-parser"); // parse cookie header
+const passport = require("passport");
+const v1 = require('../routes/v1');
+const session = require("express-session");
+const passportSetup = require("../config/passport-setup");
+var bootstrap = require('../app');
+var app = bootstrap.app;
+
+
+app.listen(port, () => console.log(`Server is running on port ${port}!`));

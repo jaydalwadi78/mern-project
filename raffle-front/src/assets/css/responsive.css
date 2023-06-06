@@ -1,0 +1,159 @@
+@media only screen and ( max-width: 1400px ) {
+
+    
+
+}
+
+
+@media only screen and ( min-width: 1200px ) and ( max-width: 1400px ) {
+
+
+
+}
+
+
+@media only screen and ( max-width: 1199px ) {
+
+
+
+}
+
+
+@media only screen and ( min-width: 992px ) and ( max-width: 1400px ) {
+
+    h1 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    h3  {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    h6 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+}
+
+
+@media only screen and ( min-width: 992px ) and ( max-width: 1199px ) {
+
+    .raffle_conent {
+        margin-top: 0;
+    }
+    .raffle_conent h3, 
+    .raffle_price, 
+    .raffle_price h2, 
+    .participants_text h6, 
+    .participants_total h6, 
+    .progress_bar {
+        margin-bottom: 10px;
+    }
+    .register_box {
+        margin-top: 15px;
+    }
+
+}
+
+
+@media only screen and ( max-width: 991px ) {
+
+    h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    h3  {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    h6 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .connect_free_box {
+        margin-top: 35px;
+    }
+    .table_wrapp {
+        overflow-x: scroll;
+    }
+    .table_wrapp::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+
+}
+
+
+@media only screen and ( min-width: 768px ) and ( max-width: 991px ) {
+
+    .footer_menu ul li {
+        padding-left: 15px;
+        font-size: 14px;
+    }
+
+}
+ 
+
+@media only screen and ( max-width: 767px ) {
+
+    .register_img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .register_content {
+        text-align: center;
+    }
+    .register_content ul li {
+        padding: 0 10px 15px;
+    }
+
+    .header_btn ul li.winnermenu {
+        display: none;
+    }
+
+    .copyright_content {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .copyright_content br {
+        display: none;
+    } 
+    .footer_menu {
+        text-align: center;
+    }
+    .footer_menu ul li {
+        padding: 0 10px;
+    }
+
+}
+
+
+@media only screen and ( max-width: 575px ) {
+
+    .main_wrapp {
+        padding-top: 160px;
+    }
+
+    .header_btn ul li {
+        padding: 15px 15px 0;
+    }
+
+}
+
+
+@media only screen and ( max-width: 480px ) {
+
+
+
+}

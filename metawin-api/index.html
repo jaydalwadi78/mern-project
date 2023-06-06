@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metawin Socket</title>
+</head>
+
+<body>
+    <script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script type="text/javascript">
+        var socket = io.connect("ws://localhost:8080", { transports: ["websocket"] });
+        setTimeout(() => {
+            console.log("socket >>>>> ", socket);
+        }, 3000)
+        if (socket) {
+            console.log("sdsfsdsf");
+            socket.on("connect", () => {
+                console.warn(socket.id);
+            });
+
+            socket.on('connected-user', (msg) => {
+                console.warn('msg from server >>>> ', msg)
+                socket.emit("joinRoom", {
+                    "userid": msg._id,
+                    "room": "globalRoom"
+                })
+            })
+        }
+    </script>
+</body>
+
+</html>
