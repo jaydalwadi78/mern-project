@@ -1,4 +1,4 @@
-const WEB3_PROVIDER = "https://goerli.infura.io/v3/31c0cfa2cc274e94b75e61a6f18d44f2";
+const WEB3_PROVIDER = "WEB3_PROVIDER";
 
 const CONFIG = {
     WEB3_PROVIDER
